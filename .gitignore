@@ -1,0 +1,5 @@
+.DS_Store
+*.tmp
+# never commit raw exports with real tenant data
+exports/
+*.csv
