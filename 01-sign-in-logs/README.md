@@ -1,21 +1,21 @@
-# 01 — Sign-in logs & failed logons
+# 01 — Sign-in logs 
 
-**Date:** 2026-10-30
-**Source:** Entra admin center → Monitoring & health → Sign-in logs
 
-## Scenario
-- User A: normal sign-in, password change, MFA registration (Microsoft Authenticator)
-- User B: 3–4 failed sign-ins (wrong password), then a successful one
+## Account locked (TestUser3)
+User says their account is locked.
 
-## Investigation note
-> Fill in using [the template](../templates/investigation-note.md)
+1. TestUser3 signed in with ~10 different wrong passwords.
+2. Entra > Monitoring & health > Sign-in logs, filter: TestUser3, Status: Failure
+3. Waited ~ 60 s, signed withthe correct password
 
-- **User:** jan.kowalski@contoso.onmicrosoft.com
-- **What happened:**
-- **Details:** error code / IP & location / device & browser / MFA / Conditional Access
-- **Verdict:** TP / FP / Benign
-- **Reasoning:**
-- **Actions:**
+| Code | Meaning |
+|---|---|
+| 50126 | Invalid username or password |
+| 50053 | Account locked (Smart Lockout) |
 
-## What I learned
--
+**Observations:**
+- Smart Lockout ignores the same wrong password repeated - each attempt must be different to count.
+- One session, one person. Verdict: **Benign**.
+- Location showed Bydgoszcz, I'm in Warsaw. ASN 13335 = Cloudflare, my Icloud Private Relay. Geo-UP is a guess; check the ASN first.
+
+![Account locked](account-locked.png)
