@@ -5,12 +5,17 @@
 |---|---|
 | 50126 | Invalid username or password |
 | 50053 | Account locked (Smart Lockout) |
-| 50057 | Account disabled |
-| 50074 | Strong authentication (MFA) required |
-| 500121 | MFA failed or was interrupted |
-| 53003 | Blocked by Conditional Access |
+| 50140 | "Stay signed in?" prompt - interrupt, not an error |
+| 50058 | No active session - user must sign in again (seen after revoking sessions) |
 
-## Roles relevant to SOC
+## Exchange delivery codes
+| Code | Meaning |
+|---|---|
+| 550 5.1.10 | Recipient not found - usually a typo in the address |
+| 5xx | Permanent failure, no retry |
+| 4xx | Temporary failure, server retries | 
+
+## Admin roles
 | Role | Can do |
 |---|---|
 | Security Reader | Read-only access to security portals |
