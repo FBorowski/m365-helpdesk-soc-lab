@@ -11,4 +11,6 @@ My hands-on Microsoft 365 lab. Starting with M365 administration and common help
 - [05 - OneDrive sharing](05-onedrive-and-sharing/README.md)
 - [06 - Teams](06-teams/README.md)
 - [07 - Mailbox permissions](07-mailbox-permissions/README.md)
+- [08 - Phishing](08-phishing/README.md)
+- [09 - SharePoing](09-sharepoint/README.md)
 - [Cheatsheet](cheatsheet.md)
