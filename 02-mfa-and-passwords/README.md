@@ -31,6 +31,3 @@ Lesson: don't assume role permissions - **check them**.
 **Note:** Password reset is available in both portals. Entra always forces a password change at next sign-in. Admin center lets you choose (checkbox: *Require this user to change their password when they first sign-in*).
 
 ![Password reset by Security Operator](password-reset.png)
-
-
-##

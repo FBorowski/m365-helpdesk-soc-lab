@@ -10,4 +10,5 @@ My hands-on Microsoft 365 lab. Starting with M365 administration and common help
 - [04 - Message trace](04-message-trace/README.md)
 - [05 - OneDrive sharing](05-onedrive-and-sharing/README.md)
 - [06 - Teams](06-teams/README.md)
+- [07 - Mailbox permissions](07-mailbox-permissions/README.md)
 - [Cheatsheet](cheatsheet.md)
